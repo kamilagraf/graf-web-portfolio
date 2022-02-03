@@ -9,10 +9,11 @@ export const StyledButtonPrimary = styled.button`
   justify-content: center;
   text-decoration: none;
   padding: 16px 24px;
-
-  p {
-    color: ${({ theme }) => theme.colors.black.zero};
-  }
+  color: ${({ theme }) => theme.colors.black.zero};
+  font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
 
   svg.icon-left {
     margin-right: 11px;

@@ -22,4 +22,9 @@ export const theme = {
     medium: '500',
     semiBold: '600',
   },
+  breakpoints: {
+    sm: 'screen and (max-width: 767px)',
+    md: 'screen and (min-width: 768px)',
+    lg: 'screen and (min-width: 1356px)',
+  },
 };

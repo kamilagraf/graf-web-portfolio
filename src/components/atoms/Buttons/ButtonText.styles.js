@@ -8,10 +8,11 @@ export const StyledButtonText = styled.button`
   justify-content: center;
   text-decoration: none;
   padding: 16px 0;
-
-  p {
-    color: ${({ theme }) => theme.colors.white.zero};
-  }
+  color: ${({ theme }) => theme.colors.white.zero};
+  font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
 
   svg.icon-left {
     margin-right: 11px;
