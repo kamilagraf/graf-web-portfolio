@@ -45,7 +45,7 @@ export const GlobalStyle = createGlobalStyle`
         }
 
         @media screen and (min-width: 1356px) {
-        width: 1308px;
+
         padding: 100px 0;
         }
 

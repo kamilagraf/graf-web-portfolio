@@ -33,10 +33,7 @@ export const StyledButtonPrimary = styled.button`
 
   &:disabled {
     background-color: ${({ theme }) => theme.colors.black.ten};
-
-    p {
-      color: ${({ theme }) => theme.colors.white.twenty};
-    }
+    color: ${({ theme }) => theme.colors.white.twenty};
 
     svg {
       path {

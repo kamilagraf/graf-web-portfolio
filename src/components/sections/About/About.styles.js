@@ -1,8 +1,7 @@
 import styled from 'styled-components';
+import { LimeRectangle } from 'components/atoms/LimeRectangle/LimeRectangle';
 
 export const StyledAboutSection = styled.section`
-  background-color: #200934;
-
   .inner {
     display: block;
 
@@ -110,15 +109,32 @@ export const StyledAboutSection = styled.section`
   }
 `;
 
-export const LimeRectangle = styled.div`
-  display: none;
-  width: 240px;
-  height: 120px;
-  background-color: ${({ theme }) => theme.colors.limePrimary.zero};
-  border-radius: 22px;
+// export const LimeRect = styled(LimeRectangle)`
+//   display: none;
+//   width: 240px;
+//   height: 120px;
+//   background-color: ${({ theme }) => theme.colors.limePrimary.zero};
+//   border-radius: 22px;
 
+//   @media screen and (min-width: 768px) {
+//     display: block;
+//     grid-column: 2 / 4;
+//     grid-row: 2;
+//     align-self: end;
+//     justify-self: center;
+//     margin: 0 0 40px 0;
+//   }
+
+//   @media screen and (min-width: 1356px) {
+//     grid-column: 7 / 10;
+//     margin: 0 0 53px 0;
+//   }
+// `;
+
+export const LimeRect = styled(LimeRectangle)`
   @media screen and (min-width: 768px) {
-    display: block;
+    width: 240px;
+    height: 120px;
     grid-column: 2 / 4;
     grid-row: 2;
     align-self: end;
@@ -127,11 +143,9 @@ export const LimeRectangle = styled.div`
   }
 
   @media screen and (min-width: 1356px) {
+    width: 308px;
+    height: 150px;
     grid-column: 7 / 10;
     margin: 0 0 53px 0;
   }
 `;
-
-export const StyledText = styled.div``;
-
-export const StyledImages = styled.div``;

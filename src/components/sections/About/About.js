@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyledAboutSection, LimeRectangle, StyledImages, StyledText } from './About.styles';
+import { StyledAboutSection, LimeRect } from './About.styles';
 import { Caption } from 'components/atoms/Customs/Customs';
 import { Header4 } from 'components/atoms/Headers/Headers';
 import { Paragraph } from 'components/atoms/Paragraphs/Paragraphs';
@@ -25,7 +25,7 @@ const About = () => {
         </Paragraph>
         <ButtonPrimary IconRight={ArrowRight}>Drop me a line</ButtonPrimary>
         <img className="deskphoto" src={deskphoto} alt="Deskphoto" />
-        <LimeRectangle />
+        <LimeRect />
         <img className="facephoto" src={facephoto} alt="Facephoto" />
       </div>
     </StyledAboutSection>

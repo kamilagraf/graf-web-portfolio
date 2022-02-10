@@ -23,9 +23,7 @@ export const StyledButtonText = styled.button`
   }
 
   &:hover {
-    p {
-      color: ${({ theme }) => theme.colors.limePrimary.zero};
-    }
+    color: ${({ theme }) => theme.colors.limePrimary.zero};
 
     svg {
       path {
@@ -35,9 +33,7 @@ export const StyledButtonText = styled.button`
   }
 
   &:active {
-    p {
-      color: ${({ theme }) => theme.colors.limePrimary.twenty};
-    }
+    color: ${({ theme }) => theme.colors.limePrimary.twenty};
 
     svg {
       path {
@@ -47,9 +43,7 @@ export const StyledButtonText = styled.button`
   }
 
   &:disabled {
-    p {
-      color: ${({ theme }) => theme.colors.black.thirty};
-    }
+    color: ${({ theme }) => theme.colors.black.thirty};
 
     svg {
       path {

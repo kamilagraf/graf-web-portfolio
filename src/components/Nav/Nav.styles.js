@@ -9,6 +9,7 @@ export const StyledHeader = styled.header`
   width: 100%;
   height: 104px;
   padding: 0 16px;
+  background-color: ${({ theme }) => theme.colors.black.zero};
 
   @media screen and (min-width: 768px) {
     width: 736px;

@@ -6,6 +6,12 @@ export const Paragraph = styled.p`
   line-height: ${({ isSmall }) => (isSmall ? '28px' : '30px')};
   margin: 0;
 
+  span.white {
+    color: ${({ theme }) => theme.colors.white.zero};
+    font-style: italic;
+    font-weight: ${({ theme }) => theme.fontWeight.regular};
+  }
+
   @media screen and (min-width: 768px) {
     font-size: ${({ isSmall }) => (isSmall ? '20px' : '22px')};
     line-height: ${({ isSmall }) => (isSmall ? '30px' : '34px')};
