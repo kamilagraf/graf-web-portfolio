@@ -7,6 +7,7 @@ import About from 'components/sections/About/About';
 import Work from 'components/sections/Work/Work';
 import Portfolio from 'components/sections/Portfolio/Portfolio';
 import Contact from 'components/sections/Contact/Contact';
+import Footer from 'components/Footer/Footer';
 
 const Root = () => {
   return (
@@ -18,6 +19,7 @@ const Root = () => {
         <Work />
         <Portfolio />
         <Contact />
+        <Footer />
       </MainContainer>
     </Wrapper>
   );

@@ -4,15 +4,27 @@ export const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
   top: 0;
   width: 100%;
   height: 104px;
   padding: 0 16px;
   background-color: ${({ theme }) => theme.colors.black.zero};
+  z-index: 10;
 
   @media screen and (min-width: 768px) {
+    position: fixed;
     width: 736px;
+
+    &.visible {
+      visibility: visible;
+      transition: all 0.3s;
+    }
+
+    &.hidden {
+      visibility: hidden;
+      transition: all 0.3s;
+      transform: translateY(-100%);
+    }
   }
 
   @media screen and (min-width: 1356px) {
@@ -28,6 +40,16 @@ export const StyledNav = styled.nav`
   position: relative;
   width: 100%;
   color: ${({ theme }) => theme.colors.white.zero};
+
+  opacity: 0.1;
+  transform: translateY(-20px);
+  transition: all 0.5s ease-in-out;
+
+  &.fade-down {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.5s ease-in-out;
+  }
 `;
 
 export const StyledLinks = styled.div`
@@ -51,14 +73,18 @@ export const StyledLinks = styled.div`
     font-weight: ${({ theme }) => theme.fontWeight.semiBold};
     font-size: 18px;
     line-height: 24px;
-    color: ${({ theme }) => theme.colors.white.ten};
     text-decoration: none;
-  }
-`;
+    color: ${({ theme }) => theme.colors.white.zero};
+    transition: all 0.25s ease-in-out;
 
-export const Logo = styled.div`
-  font-weight: ${({ theme }) => theme.fontWeight.semiBold};
-  font-size: 24px;
-  line-height: 24px;
-  color: ${({ theme }) => theme.colors.white.zero};
+    &:hover {
+      color: ${({ theme }) => theme.colors.white.twenty};
+    }
+
+    &:active,
+    &:focus {
+      color: ${({ theme }) => theme.colors.limePrimary.zero};
+      transition: none;
+    }
+  }
 `;

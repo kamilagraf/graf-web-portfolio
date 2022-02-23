@@ -1,5 +1,17 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { LimeRectangle } from 'components/atoms/LimeRectangle/LimeRectangle';
+
+const arrowAnimation = keyframes`
+	0% {
+		transform: translateX(0);
+	}
+  50% {
+		transform: translateX(8px);
+	}
+  0% {
+		transform: translateX(0);
+	}
+`;
 
 export const StyledPortfolio = styled.div``;
 
@@ -11,35 +23,26 @@ export const StyledPortfolioSection = styled.section`
 `;
 
 export const StyledTexts = styled.div`
+  display: flex;
+  flex-direction: column;
+
   @media screen and (min-width: 1356px) {
     width: 642px;
   }
 
   h3 {
-    margin: 0 0 40px 0;
-
-    @media screen and (min-width: 1356px) {
-      margin: 0 0 66px 0;
-    }
-  }
-
-  button {
-    margin: 0 0 48px 0;
-
-    @media screen and (min-width: 768px) {
-      margin: 0 0 32px 0;
-    }
+    margin: 0 0 24px 0;
   }
 
   p:nth-last-child(2) {
-    margin: 16px 0 24px 0;
+    margin: 48px 0 24px 0;
 
     @media screen and (min-width: 768px) {
-      margin: 42px 0 24px 0;
+      margin: 58px 0 24px 0;
     }
 
     @media screen and (min-width: 1356px) {
-      margin: 92px 0 24px 0;
+      margin: 108px 0 24px 0;
     }
   }
 
@@ -49,13 +52,67 @@ export const StyledTexts = styled.div`
     @media screen and (min-width: 768px) {
       margin: 0 0 56px 0;
     }
+
+    @media screen and (min-width: 1356px) {
+      margin: 0;
+    }
   }
 
-  a {
-    color: ${({ theme }) => theme.colors.limePrimary.zero};
+  a.link-btn {
+    margin: 0 0 8px 0;
+    align-self: start;
+    display: inline-block;
 
-    &.nounderline {
-      text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+      &:after {
+        width: 100%;
+      }
+      svg {
+        animation: ${arrowAnimation} 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      position: relative;
+      bottom: 0.15em;
+      background-color: ${({ theme }) => theme.colors.limePrimary.zero};
+      transition: all 0.4s ease-in-out;
+      opacity: 0.8;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin: 0;
+    }
+  }
+
+  a.link {
+    color: ${({ theme }) => theme.colors.limePrimary.zero};
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover,
+    &:focus,
+    &:active {
+      &:after {
+        width: 100%;
+      }
+    }
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      position: relative;
+      bottom: 0.35em;
+      background-color: ${({ theme }) => theme.colors.limePrimary.zero};
+      transition: all 0.4s ease-in-out;
+      opacity: 0.8;
     }
   }
 `;

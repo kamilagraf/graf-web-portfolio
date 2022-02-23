@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { LimeRectangle } from 'components/atoms/LimeRectangle/LimeRectangle';
 
 export const StyledContactSection = styled.section`
-  background-color: #200934;
+  position: relative;
 `;
 
 export const Wrapper = styled.div`
@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
 
   @media screen and (min-width: 1356px) {
     padding: 80px;
-    z-index: 3;
+    z-index: 2;
   }
 `;
 
@@ -58,6 +58,18 @@ export const SocialEntry = styled.li`
     font-weight: ${({ theme }) => theme.fontWeight.medium};
     font-size: 20px;
     line-height: 30px;
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+      color: ${({ theme }) => theme.colors.white.twenty};
+      transform: translateY(-1px);
+
+      svg {
+        path {
+          stroke: ${({ theme }) => theme.colors.white.twenty};
+        }
+      }
+    }
 
     @media screen and (min-width: 768px) {
       font-size: 22px;
@@ -116,14 +128,14 @@ export const LimeRect = styled(LimeRectangle)`
     height: 80px;
     position: absolute;
     right: 0;
-    top: -40px;
+    top: 40px;
   }
 
   @media screen and (min-width: 1356px) {
     width: 196px;
     height: 100px;
     top: auto;
-    bottom: -50px;
+    bottom: 50px;
     z-index: 1;
   }
 `;

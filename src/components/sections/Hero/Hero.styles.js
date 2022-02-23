@@ -1,15 +1,5 @@
 import styled, { keyframes } from 'styled-components';
 
-// @media screen and (min-width: 768px) {
-//   width: 767px;
-//   height: 100vh;
-// }
-
-// @media screen and (min-width: 1356px) {
-//   width: 1366px;
-//   padding: 0 24px;
-// }
-
 const waveAnimation = keyframes`
     0% { transform: rotate( 0.0deg) }
    10% { transform: rotate(14.0deg) }
@@ -31,6 +21,15 @@ export const StyledHeroSection = styled.section`
 
   h1 {
     margin: 80px auto;
+    opacity: 2%;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out 0.5s;
+
+    &.fade-in {
+      opacity: 1;
+      transform: translateY(0px);
+      transition: all 0.5s ease-in-out 0.5s;
+    }
   }
 
   .wave {
@@ -46,6 +45,15 @@ export const StyledHeroSection = styled.section`
 
     @media screen and (min-width: 768px) {
       display: block;
+      opacity: 2%;
+      transform: translateY(20px);
+      transition: all 0.5s ease-in-out 1s;
+
+      &.fade-in {
+        opacity: 1;
+        transform: translateY(0px);
+        transition: all 0.5s ease-in-out 1s;
+      }
     }
 
     @media screen and (min-width: 1920px) {

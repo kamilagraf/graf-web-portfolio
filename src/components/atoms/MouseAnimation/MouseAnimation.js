@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { Wrapper, Mouse } from './MouseAnimation.styles';
 
-const MouseAnimation = () => {
+const MouseAnimation = forwardRef((props, ref) => {
   return (
-    <Wrapper className="mouse-btn">
+    <Wrapper className="mouse-btn" ref={ref}>
       <a href="#">
         <Mouse>
           <span></span>
@@ -11,6 +11,6 @@ const MouseAnimation = () => {
       </a>
     </Wrapper>
   );
-};
+});
 
 export default MouseAnimation;

@@ -11,6 +11,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.3",
     "react-swm-icon-pack": "^1.0.12",
+    "scrollreveal": "^4.0.9",
     "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2"
   },
