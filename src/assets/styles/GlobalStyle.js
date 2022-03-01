@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import TransitionStyles from 'assets/styles/TransitionStyles';
 
 export const GlobalStyle = createGlobalStyle`
     html {
@@ -53,4 +54,7 @@ export const GlobalStyle = createGlobalStyle`
     a, button {
         font-family: 'DM Sans', sans-serif;
     }
+
+    ${TransitionStyles};
+
 `;

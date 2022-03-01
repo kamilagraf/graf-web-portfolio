@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { StyledFooter, Wrapper } from './Footer.styles';
 import Logo from 'components/atoms/Logo/Logo';
 import { Paragraph } from 'components/atoms/Paragraphs/Paragraphs';
@@ -14,7 +13,5 @@ const Footer = () => {
     </StyledFooter>
   );
 };
-
-Footer.propTypes = {};
 
 export default Footer;

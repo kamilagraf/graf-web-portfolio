@@ -40,16 +40,6 @@ export const StyledNav = styled.nav`
   position: relative;
   width: 100%;
   color: ${({ theme }) => theme.colors.white.zero};
-
-  opacity: 0.1;
-  transform: translateY(-20px);
-  transition: all 0.5s ease-in-out;
-
-  &.fade-down {
-    opacity: 1;
-    transform: translateY(0px);
-    transition: all 0.5s ease-in-out;
-  }
 `;
 
 export const StyledLinks = styled.div`

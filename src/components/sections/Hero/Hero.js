@@ -1,28 +1,29 @@
-import React, { useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
+import React, { useEffect, useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
 import MouseAnimation from 'components/atoms/MouseAnimation/MouseAnimation';
 import { Header1 } from 'components/atoms/Headers/Headers';
 import { StyledHeroSection } from './Hero.styles';
 
 const Hero = () => {
-  const fadeContainer1 = useRef(null);
-  const fadeContainer2 = useRef(null);
+  const [fade, setFade] = useState(false);
 
   useEffect(() => {
-    fadeContainer1.current.classList.add('fade-in');
-    fadeContainer2.current.classList.add('fade-in');
+    setFade(true);
   }, []);
 
   return (
     <StyledHeroSection id="hero">
-      <Header1 ref={fadeContainer1}>
-        Hey, I'm Kamila <span className="wave">👋</span> <br /> I develop tools that make building products <span className="green">effortless</span>.
-      </Header1>
-      <MouseAnimation ref={fadeContainer2} />
+      <CSSTransition in={fade} classNames="fadeup" timeout={2000}>
+        <Header1>
+          Hey, I'm Kamila <span className="wave">👋</span> <br /> I develop tools that make building products{' '}
+          <span className="green">effortless</span>.
+        </Header1>
+      </CSSTransition>
+      <CSSTransition in={fade} classNames="fadeup" timeout={2000}>
+        <MouseAnimation />
+      </CSSTransition>
     </StyledHeroSection>
   );
 };
-
-Hero.propTypes = {};
 
 export default Hero;

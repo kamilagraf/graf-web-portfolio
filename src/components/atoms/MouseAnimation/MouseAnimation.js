@@ -3,7 +3,7 @@ import { Wrapper, Mouse } from './MouseAnimation.styles';
 
 const MouseAnimation = forwardRef((props, ref) => {
   return (
-    <Wrapper className="mouse-btn" ref={ref}>
+    <Wrapper className="mouse-btn" ref={ref} {...props}>
       <a href="#">
         <Mouse>
           <span></span>

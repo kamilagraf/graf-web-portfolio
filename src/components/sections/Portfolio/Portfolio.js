@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
 import { srConfig } from 'config';
 import sr from 'utils/sr';
 import { StyledPortfolio, StyledPortfolioSection, StyledTexts, StyledImages, LimeRect } from './Portfolio.styles';
@@ -147,7 +146,5 @@ const Portfolio = () => {
     </StyledPortfolio>
   );
 };
-
-Portfolio.propTypes = {};
 
 export default Portfolio;

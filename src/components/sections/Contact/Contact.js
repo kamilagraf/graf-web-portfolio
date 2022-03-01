@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
 import { srConfig } from 'config';
 import sr from 'utils/sr';
 import { StyledContactSection, Wrapper, StyledSocialList, SocialEntry, StyledAvatar, CircleIcon, LimeRect } from './Contact.styles';
@@ -51,13 +50,10 @@ const Contact = () => {
             <MessageCircleDots color="#050505" size="40px" strokeWidth="2" />
           </CircleIcon>
         </StyledAvatar>
-        {/* <LimeRect /> */}
       </Wrapper>
       <LimeRect />
     </StyledContactSection>
   );
 };
-
-Contact.propTypes = {};
 
 export default Contact;

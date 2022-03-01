@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect } from 'react';
+import { CSSTransition } from 'react-transition-group';
 // import { NavLink } from 'react-router-dom';
 import { StyledHeader, StyledNav, StyledLinks } from './Nav.styles';
 import Logo from 'components/atoms/Logo/Logo';
@@ -22,7 +22,11 @@ const navLinks = [
 const Nav = () => {
   const [showNav, setShowNav] = useState(true);
   const [scrollPos, setScrollPos] = useState(0);
-  const fadeContainer = useRef(null);
+  const [fade, setFade] = useState(false);
+
+  useEffect(() => {
+    setFade(true);
+  }, []);
 
   const handleScroll = () => {
     setScrollPos(document.body.getBoundingClientRect().top);
@@ -30,7 +34,6 @@ const Nav = () => {
   };
 
   useEffect(() => {
-    fadeContainer.current.classList.add('fade-down');
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -40,24 +43,24 @@ const Nav = () => {
 
   return (
     <StyledHeader id="navbar" className={showNav ? 'visible' : 'hidden'}>
-      <StyledNav ref={fadeContainer}>
-        <Logo />
-        <StyledLinks>
-          <ul>
-            {navLinks &&
-              navLinks.map(({ url, name }, i) => (
-                <li key={i}>
-                  {/* <NavLink to={url}>{name}</NavLink> */}
-                  <a href={url}>{name}</a>
-                </li>
-              ))}
-          </ul>
-        </StyledLinks>
-      </StyledNav>
+      <CSSTransition in={fade} classNames="fadedown" timeout={2000}>
+        <StyledNav>
+          <Logo />
+          <StyledLinks>
+            <ul>
+              {navLinks &&
+                navLinks.map(({ url, name }, i) => (
+                  <li key={i}>
+                    {/* <NavLink to={url}>{name}</NavLink> */}
+                    <a href={url}>{name}</a>
+                  </li>
+                ))}
+            </ul>
+          </StyledLinks>
+        </StyledNav>
+      </CSSTransition>
     </StyledHeader>
   );
 };
-
-Nav.propTypes = {};
 
 export default Nav;

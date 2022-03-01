@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
 import { srConfig } from 'config';
 import sr from 'utils/sr';
 import { StyledAboutSection, LimeRect } from './About.styles';
@@ -41,7 +40,5 @@ const About = () => {
     </StyledAboutSection>
   );
 };
-
-About.propTypes = {};
 
 export default About;

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
 import { srConfig } from 'config';
 import sr from 'utils/sr';
 import { StyledWorkSection } from './Work.styles';
@@ -34,7 +33,5 @@ const Work = () => {
     </StyledWorkSection>
   );
 };
-
-Work.propTypes = {};
 
 export default Work;

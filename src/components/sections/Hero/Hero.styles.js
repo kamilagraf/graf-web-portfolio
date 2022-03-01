@@ -21,15 +21,6 @@ export const StyledHeroSection = styled.section`
 
   h1 {
     margin: 80px auto;
-    opacity: 2%;
-    transform: translateY(20px);
-    transition: all 0.5s ease-in-out 0.5s;
-
-    &.fade-in {
-      opacity: 1;
-      transform: translateY(0px);
-      transition: all 0.5s ease-in-out 0.5s;
-    }
   }
 
   .wave {
@@ -45,15 +36,6 @@ export const StyledHeroSection = styled.section`
 
     @media screen and (min-width: 768px) {
       display: block;
-      opacity: 2%;
-      transform: translateY(20px);
-      transition: all 0.5s ease-in-out 1s;
-
-      &.fade-in {
-        opacity: 1;
-        transform: translateY(0px);
-        transition: all 0.5s ease-in-out 1s;
-      }
     }
 
     @media screen and (min-width: 1920px) {
