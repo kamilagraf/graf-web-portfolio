@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7946b0d4.chunk.css",
+    "main.js": "/static/js/main.81405e58.chunk.js",
+    "main.js.map": "/static/js/main.81405e58.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.dd1f719c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.dd1f719c.js.map",
+    "static/js/2.10cea276.chunk.js": "/static/js/2.10cea276.chunk.js",
+    "static/js/2.10cea276.chunk.js.map": "/static/js/2.10cea276.chunk.js.map",
+    "static/js/3.92e94846.chunk.js": "/static/js/3.92e94846.chunk.js",
+    "static/js/3.92e94846.chunk.js.map": "/static/js/3.92e94846.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.7946b0d4.chunk.css.map": "/static/css/main.7946b0d4.chunk.css.map",
+    "static/js/2.10cea276.chunk.js.LICENSE.txt": "/static/js/2.10cea276.chunk.js.LICENSE.txt",
+    "static/media/KamilaGraf_CV.1409ce16.pdf": "/static/media/KamilaGraf_CV.1409ce16.pdf",
+    "static/media/avatar.67bd3dc6.jpg": "/static/media/avatar.67bd3dc6.jpg",
+    "static/media/figma-plugin01.cda63f54.jpg": "/static/media/figma-plugin01.cda63f54.jpg",
+    "static/media/figma-plugin02.bcc60353.jpg": "/static/media/figma-plugin02.bcc60353.jpg",
+    "static/media/graf-deskphoto.9c0cf92d.jpg": "/static/media/graf-deskphoto.9c0cf92d.jpg",
+    "static/media/graf-facephoto.70c756c5.jpg": "/static/media/graf-facephoto.70c756c5.jpg",
+    "static/media/icon-browser01.37f20d66.jpg": "/static/media/icon-browser01.37f20d66.jpg",
+    "static/media/icon-browser02.dd9b0f38.jpg": "/static/media/icon-browser02.dd9b0f38.jpg",
+    "static/media/linkedin-icon.6f600784.svg": "/static/media/linkedin-icon.6f600784.svg",
+    "static/media/react-icon-pack01.5665a24e.jpg": "/static/media/react-icon-pack01.5665a24e.jpg",
+    "static/media/react-icon-pack02.c442c486.jpg": "/static/media/react-icon-pack02.c442c486.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd1f719c.js",
+    "static/js/2.10cea276.chunk.js",
+    "static/css/main.7946b0d4.chunk.css",
+    "static/js/main.81405e58.chunk.js"
+  ]
+}
