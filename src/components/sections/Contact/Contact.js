@@ -38,7 +38,7 @@ const Contact = () => {
             </a>
           </SocialEntry>
           <SocialEntry>
-            <a href={CV} download aria-label="cv" target="_blank" rel="noreferrer">
+            <a href={CV} download="KamilaGraf_CV.pdf" aria-label="cv" target="_blank" rel="noreferrer">
               <DocumentClean color="#FFFFFF" size="32px" strokeWidth="2" />
               Download my CV
             </a>
