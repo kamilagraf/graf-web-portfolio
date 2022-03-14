@@ -27,7 +27,7 @@ const Contact = () => {
         <StyledSocialList>
           <SocialEntry>
             <a href="https://www.linkedin.com/in/kamilagraf/" aria-label="linkedin" target="_blank" rel="noreferrer">
-              <LinkedinIcon />
+              <LinkedinIcon id="linkedin" />
               Chat on LinkedIn
             </a>
           </SocialEntry>

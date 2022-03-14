@@ -58,11 +58,17 @@ export const SocialEntry = styled.li`
     font-weight: ${({ theme }) => theme.fontWeight.medium};
     font-size: 20px;
     line-height: 30px;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.15s ease-in-out;
 
     &:hover {
       color: ${({ theme }) => theme.colors.white.twenty};
       transform: translateY(-1px);
+
+      svg#linkedin {
+        path {
+          fill: ${({ theme }) => theme.colors.white.twenty};
+        }
+      }
 
       svg {
         path {
